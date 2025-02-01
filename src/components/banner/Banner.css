@@ -1,0 +1,38 @@
+.banner-main {
+  background: rgb(193, 228, 253);
+  background: linear-gradient(90deg, rgba(222, 210, 231, 1) 0%, rgba(193, 228, 253, 1) 100%);
+  width: 80%;
+  border-radius: 50px;
+  padding: 30px;
+  margin: 50px;
+}
+
+.banner-text {
+  font-size: 72px;
+  margin: 20px;
+}
+
+/* Responsive Banner */
+@media (max-width: 1024px) {
+  .banner-text {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-main {
+    width: 90%;
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  .banner-text {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-text {
+    font-size: 28px;
+  }
+}
