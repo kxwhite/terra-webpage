@@ -3,6 +3,7 @@ import './Navbar.css'
 import Logo from '../../assets/TerraLogo.webp'
 // import DropDown from '../common/DropDown'
 import MenuDropdown from '../common/MenuDropdown'
+import Button from '../common/Button';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -65,18 +66,18 @@ export default function Navbar() {
         <div className="nav-menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
           ☰
         </div>
-      </div>
-
-       {/* Mobile Menu */}
       {menuOpen && (
         <div className="mobile-menu">
           {tabs.map((tab, i) => (
             <p key={i} className="mobile-menu-item">{tab}</p>
           ))}
           <a href="#" className="mobile-menu-item">Login</a>
-          <button className="mobile-nav-btn">Get started</button>
+          <button className='mobile-menu-btn'>Get started</button>
+          {/* <Button text="Get started" /> */}
         </div>
       )}
+      </div>
+
     </nav>
   )
 }

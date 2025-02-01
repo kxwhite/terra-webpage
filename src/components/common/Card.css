@@ -39,6 +39,7 @@
   position: relative;
 }
 
+
 /* Card Container */
 .card-container {
   display: flex;
@@ -51,7 +52,7 @@
 /* Responsive Cards */
 @media (max-width: 1024px) {
   .card-main {
-    width: 90%;
+    width: auto;
     max-width: 350px;
     padding: 20px;
   }
@@ -70,5 +71,10 @@
   .card-main {
     width: 90%;
     padding: 20px;
+  }
+
+  .card-img-main {
+    width: 290px;
+    height: auto;
   }
 }

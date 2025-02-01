@@ -103,9 +103,14 @@
 
   .steps {
     align-items: center;
+    margin: 0 20px;
   }
 
   .step {
     width: 100%;
+  }
+
+  .cta-buttons {
+    justify-content: center;
   }
 }
