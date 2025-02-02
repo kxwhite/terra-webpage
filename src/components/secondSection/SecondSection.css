@@ -10,8 +10,16 @@
 .second-para {
   font-size: 18px;
   font-weight: 300;
+  color: #666;
 }
 
 .second-img {
   margin: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .second-title {
+    font-size: 1.6em;
+  }
 }

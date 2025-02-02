@@ -7,9 +7,10 @@
   font-weight: bold;
 }
 
-.how-it-works-p {
+.how-it-works-para {
   color: #666;
   margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .container {
@@ -112,5 +113,16 @@
 
   .cta-buttons {
     justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-it-works-h2 {
+    font-size: 1.6em;
+  }
+
+  .how-it-works-para {
+    max-width: 335px;
+    margin: 0 auto;
   }
 }
