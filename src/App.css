@@ -20,6 +20,11 @@
   border-radius: 50px 50px 0 0;
 }
 
+.second-section-main {
+  position: relative;
+  z-index: 2;
+}
+
 @media (max-width: 1024px) {
   .card-container {
     justify-content: center;
@@ -31,5 +36,9 @@
     flex-direction: column;
     align-items: center;
     margin: 30px;
+  }
+
+  .organise-section-main {
+    display: none;
   }
 }

@@ -9,6 +9,7 @@ import Card from './components/common/Card';
 import Banner from './components/banner/Banner';
 import Footer from './components/footer/Footer';
 import HowItWorks from './components/howItWorks/HowItWorks';
+import OrganiseBloodTest from './components/organiseBloodTest/OrganiseBloodTest';
 
 function App() {
 
@@ -38,16 +39,10 @@ function App() {
       <section>
         <Header />
       </section>
-      {/* <section>
-        <SecondSection
-          title1="Organise blood test data"
-          title2="without the manual hassle"
-          para1="Streamline, standardise and make sense of your users’ blood test data with Terra API’s "
-          para2="blood biomarker API."
-          isImg={true}
-        />
-      </section> */}
-      <section>
+      <section className='organise-section-main'>
+        <OrganiseBloodTest />
+      </section>
+      <section className="second-section-main">
         <SecondSection
           title1="Simplify blood report"
           title2="management for all use cases"
