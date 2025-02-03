@@ -20,9 +20,12 @@
   border-radius: 50px 50px 0 0;
 }
 
-.second-section-main {
+.simplify-section-main {
   position: relative;
   z-index: 2;
+  background-color: #BBE0FD;
+  padding-bottom: 60px;
+  border-radius: 100% 100% 0 0;
 }
 
 @media (max-width: 1024px) {
@@ -40,5 +43,10 @@
 
   .organise-section-main {
     display: none;
+  }
+
+  .simplify-section-main {
+    padding-bottom: 0;
+    background-color: transparent;
   }
 }

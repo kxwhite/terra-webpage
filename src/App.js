@@ -1,15 +1,14 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/header/Header';
-import SecondSection from './components/secondSection/SecondSection';
 import Supercharge from './assets/supercharge.svg';
 import Optimise from './assets/optimise.svg';
 import Enable from './assets/enable.svg';
-import Card from './components/common/Card';
 import Banner from './components/banner/Banner';
 import Footer from './components/footer/Footer';
 import HowItWorks from './components/howItWorks/HowItWorks';
 import OrganiseBloodTest from './components/organiseBloodTest/OrganiseBloodTest';
+import SimplifyBlood from './components/simplifyBlood/SimplifyBlood';
 
 function App() {
 
@@ -39,30 +38,11 @@ function App() {
       <section>
         <Header />
       </section>
-      <section className='organise-section-main'>
+      <section className="organise-section-main">
         <OrganiseBloodTest />
       </section>
-      <section className="second-section-main">
-        <SecondSection
-          title1="Simplify blood report"
-          title2="management for all use cases"
-          para1="No more time wasted on manual data management. Get organised, standardised"
-          para2="blood report data delivered seamlessly to your app for all use cases."
-          isImg={false}
-        />
-        <div className="card-container">
-          {cardData.map((card, i) => {
-            return (
-              <Card
-                key={i}
-                title={card.title}
-                para={card.para}
-                img={card.img}
-                index={i}
-              />
-            );
-          })}
-        </div>
+      <section className="simplify-section-main">
+        <SimplifyBlood />
       </section>
       <section>
         <HowItWorks />

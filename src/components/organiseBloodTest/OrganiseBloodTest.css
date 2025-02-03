@@ -1,17 +1,26 @@
 .organise-main {
-  margin: 60px;
+  margin: 60px auto;
   position: relative;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
 }
 
 .organise-title {
   margin: 0;
   font-size: 2.5em;
+  max-width: 600px;
 }
 
 .organise-para {
   font-size: 18px;
   font-weight: 300;
   color: #666;
+  max-width: 600px;
 }
 
 .organise-img {
@@ -20,37 +29,69 @@
 
 .organise-card-container {
   display: flex;
-  height: 500px;
+  justify-content: center;
+  align-items: center;
+  /* gap: 110px;
+  flex-wrap: wrap; */
+  width: 100%;
+  max-width: 1200px;
 }
 
-.organise-card-1 {
-  transform: rotate(-11deg) translateX(130px) translateY(90px);
-  z-index: 1;
-}
-
-.organise-card-2 {
-  transform: translateX(90px) translateY(20px);
-  z-index: 2;
-}
-
+.organise-card-1,
+.organise-card-2,
 .organise-card-3 {
-  transform: rotate(11deg) translateX(40px) translateY(55px);
-  z-index: 1;
+  flex: 1;
+  /* max-width: 320px;
+  min-width: 280px; */
 }
 
+/* Responsive Semi-Circle */
 .semi-circle {
-  width: 170%;
-  height: 1020px;
+  width: 150vw;
+  height: auto;
+  min-height: 100%;
   background-color: #BBE0FD;
   border-top: 3px solid white;
   border-radius: 100% 100% 0 0;
   position: absolute;
-  top: 640px;
-  left: -33%;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 2;
+  overflow: hidden;
 }
 
 /* Responsive */
+@media (min-width: 1024px) {
+  .organise-card-1 {
+    transform: rotate(-11deg) translateX(40px) translateY(100px);
+  }
+
+  .organise-card-2 {
+    transform: translateX(0) translateY(60px);
+    z-index: 1;
+  }
+
+  .organise-card-3 {
+    transform: rotate(11deg) translateX(-40px) translateY(130px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .organise-card-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .organise-card-1,
+  .organise-card-2,
+  .organise-card-3 {
+    transform: none;
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .organise-title {
     font-size: 1.6em;
@@ -58,21 +99,5 @@
 
   .semi-circle {
     display: none;
-  }
-
-  .organise-card-container {
-    flex-direction: column;
-    align-items: center;
-    margin: 30px;
-  }
-
-  .organise-card-1 {
-    transform: none;
-  }
-  .organise-card-2 {
-    transform: none;
-  }
-  .organise-card-3 {
-    transform: none;
   }
 }
