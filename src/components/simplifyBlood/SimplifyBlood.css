@@ -43,6 +43,11 @@
 @media (max-width: 768px) {
   .simplify-title {
     font-size: 1.6em;
+    max-width: 350px;
+  }
+
+  .simplify-para {
+    max-width: 335px;
   }
 
   .simplify-card-container {
